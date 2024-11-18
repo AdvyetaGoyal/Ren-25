@@ -1,0 +1,189 @@
+
+    .zigzag {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: 
+          linear-gradient(45deg, transparent 48%, rgba(0,0,0,0.1) 49%, rgba(0,0,0,0.1) 51%, transparent 52%),
+          linear-gradient(-45deg, transparent 48%, rgba(0,0,0,0.1) 49%, rgba(0,0,0,0.1) 51%, transparent 52%);
+        background-size: 60px 60px;
+        animation: moveZigZag 8s linear infinite;
+      }
+      
+      .zigzag:nth-child(1) {
+        opacity: 0.3;
+        animation-delay: -2s;
+      }
+      
+      .zigzag:nth-child(2) {
+        background-size: 40px 40px;
+        opacity: 0.2;
+        animation-delay: -4s;
+      }
+      
+      .zigzag:nth-child(3) {
+        background-size: 80px 80px;
+        opacity: 0.15;
+        animation-delay: -6s;
+      }
+      
+      @keyframes moveZigZag {
+        from {
+          background-position: 0 0;
+        }
+        to {
+          background-position: 100% 100%;
+        }
+      }
+      
+      /* Elegant overlay gradient */
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          45deg,
+          rgba(255,255,255,0.7) 0%,
+          rgba(255,255,255,0) 50%,
+          rgba(255,255,255,0.7) 100%
+        );
+        pointer-events: none;
+      }
+      
+      /* Optional content styling */
+      .content {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        padding: 20px;
+        font-family: 'Georgia', serif;
+      }
+
+      p img {
+        float: left;
+        width: 10%;
+      }
+
+.navbar {
+    background-color: #000000;
+    margin: auto;
+    width: 50%;
+    border:  solid ;
+    padding: 10px;
+    border-radius: 1%;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    
+}
+
+.nav-links a:hover {
+    color: #717d6e;
+}
+
+
+
+.main-content {
+    position: relative;
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+    font-size: xx-large;
+}
+.music {
+    float: left;}
+    @keyframes myfirst {    
+     0%   {background: red; left: 0px; top: 0px;}
+        25%  {background: yellow; left: 200px; top: 0px;}
+        50%  {background: blue; left: 200px; top: 200px;}
+        75%  {background: green; left: 0px; top: 200px;}
+        100% {background: red; left: 0px; top: 0px;}
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F04747; /* Red background */
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 36px;
+  color: white;
+}
+
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+header ul li {
+  margin: 0 10px;
+  color: white;
+}
+
+.day-tabs {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.day-tab {
+  padding: 10px 20px;
+  background-color: white;
+  border-radius: 5px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.day-tab.active {
+  background-color: #F04747;
+  color: white;
+}
+
+.events-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.event-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.event-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.event-card h2, .event-card h3 {
+  margin: 10px 0;
+}
